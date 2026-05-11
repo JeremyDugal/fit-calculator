@@ -1,0 +1,43 @@
+{
+  "RC1": {
+    "description": "Sliding fit",
+    "hole": "H7",
+    "shaft": "h6"
+  },
+
+  "RC3": {
+    "description": "Close running fit",
+    "hole": "H7",
+    "shaft": "g6"
+  },
+
+  "RC5": {
+    "description": "Easy running fit",
+    "hole": "H8",
+    "shaft": "f7"
+  },
+
+  "RC7": {
+    "description": "Free running fit",
+    "hole": "H9",
+    "shaft": "d9"
+  },
+
+  "RC9": {
+    "description": "Loose running fit",
+    "hole": "H11",
+    "shaft": "c11"
+  },
+
+  "FN2": {
+    "description": "Drive fit",
+    "hole": "H7",
+    "shaft": "p6"
+  },
+
+  "FN3": {
+    "description": "Medium drive fit",
+    "hole": "H7",
+    "shaft": "r6"
+  }
+}
