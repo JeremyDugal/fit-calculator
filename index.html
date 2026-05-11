@@ -242,11 +242,11 @@
       <div class="field-row">
         <div class="field">
           <label>Diamètre nominal</label>
-          <input type="number" id="shaft-dim" value="3.260" step="0.001" oninput="syncSymmetric('shaft'); calc();" />
+          <input type="number" id="shaft-dim" value="" step="0.001" oninput="syncSymmetric('shaft'); calc();" />
         </div>
         <div class="field">
           <label>Tolérance ±</label>
-          <input type="number" id="shaft-tol-sym" value="0.050" step="0.001" min="0" oninput="updateFromSym('shaft'); calc();" />
+          <input type="number" id="shaft-tol-sym" value="" step="0.001" min="0" oninput="updateFromSym('shaft'); calc();" />
         </div>
       </div>
       <div class="divider"></div>
@@ -254,11 +254,11 @@
       <div class="field-row">
         <div class="field">
           <label>Borne sup. (max)</label>
-          <input type="number" id="shaft-max" placeholder="3.310" step="0.001" oninput="updateFromBounds('shaft'); calc();" />
+          <input type="number" id="shaft-max" placeholder="" step="0.001" oninput="updateFromBounds('shaft'); calc();" />
         </div>
         <div class="field">
           <label>Borne inf. (min)</label>
-          <input type="number" id="shaft-min" placeholder="3.210" step="0.001" oninput="updateFromBounds('shaft'); calc();" />
+          <input type="number" id="shaft-min" placeholder="" step="0.001" oninput="updateFromBounds('shaft'); calc();" />
         </div>
       </div>
       <div class="iso-row">
@@ -273,11 +273,11 @@
       <div class="field-row">
         <div class="field">
           <label>Diamètre nominal</label>
-          <input type="number" id="hole-dim" value="3.260" step="0.001" oninput="syncSymmetric('hole'); calc();" />
+          <input type="number" id="hole-dim" value="" step="0.001" oninput="syncSymmetric('hole'); calc();" />
         </div>
         <div class="field">
           <label>Tolérance ±</label>
-          <input type="number" id="hole-tol-sym" value="0.050" step="0.001" min="0" oninput="updateFromSym('hole'); calc();" />
+          <input type="number" id="hole-tol-sym" value="" step="0.001" min="0" oninput="updateFromSym('hole'); calc();" />
         </div>
       </div>
       <div class="divider"></div>
@@ -285,11 +285,11 @@
       <div class="field-row">
         <div class="field">
           <label>Borne sup. (max)</label>
-          <input type="number" id="hole-max" placeholder="3.310" step="0.001" oninput="updateFromBounds('hole'); calc();" />
+          <input type="number" id="hole-max" placeholder="" step="0.001" oninput="updateFromBounds('hole'); calc();" />
         </div>
         <div class="field">
           <label>Borne inf. (min)</label>
-          <input type="number" id="hole-min" placeholder="3.210" step="0.001" oninput="updateFromBounds('hole'); calc();" />
+          <input type="number" id="hole-min" placeholder="" step="0.001" oninput="updateFromBounds('hole'); calc();" />
         </div>
       </div>
       <div class="iso-row">
@@ -461,8 +461,8 @@ function setUnit(u) {
   document.getElementById('btn-in').classList.toggle('active', u==='in');
   document.getElementById('btn-mm').classList.toggle('active', u==='mm');
   const step = u==='mm'?'0.01':'0.001';
-  const defaultDim = u==='mm'?'82.80':'3.260';
-  const defaultTol = u==='mm'?'1.27':'0.050';
+  const defaultDim = '';
+  const defaultTol = '';
   ['shaft-dim','shaft-tol-sym','shaft-max','shaft-min','hole-dim','hole-tol-sym','hole-max','hole-min'].forEach(id=>{
     const el = document.getElementById(id);
     if(el) { el.step = step; el.value=''; }
